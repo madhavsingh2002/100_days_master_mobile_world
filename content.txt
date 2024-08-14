@@ -1,0 +1,11 @@
+1. todo_MVVM_provider  
+2. todo_MVVM_provider_api  
+3. todo_MVVM_provider_firebase  
+4. todo_mvc  
+5. todo_mvc_provider  
+6. todo_mvc_provider_api  
+7. todo_mvc_provider_firebase  
+8. todo_clean_architecture  
+9. todo_clean_architecture_bloc  
+10. todo_clean_architecture_bloc_api  
+11. todo_clean_architecture_firebase  
