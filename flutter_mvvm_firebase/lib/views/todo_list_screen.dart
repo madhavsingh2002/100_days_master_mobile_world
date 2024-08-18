@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm_firebase/viewmodels/todo_viewmodel.dart';
 import 'package:provider/provider.dart';
-import 'package:todo_mvvm_api/viewmodels/todo_viewmodel.dart';
 
 class TodoListScreen extends StatelessWidget {
   TodoListScreen({super.key});
   final TextEditingController _titleController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    final todoViewmodel = Provider.of<TodoViewmodel>(context);
+    final todoViewmodel = Provider.of<TodoViewModel>(context);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       todoViewmodel.fetchTodos();
     });
@@ -29,7 +29,7 @@ class TodoListScreen extends StatelessWidget {
                 IconButton(
                     onPressed: () {
                       if (_titleController.text.trim().isNotEmpty) {
-                        todoViewmodel.addTodos(_titleController.text);
+                        todoViewmodel.addTodo(_titleController.text);
                         _titleController.clear();
                       }
                     },

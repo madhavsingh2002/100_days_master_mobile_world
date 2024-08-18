@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "569695306944",
+    "project_id": "todomvvmapi",
+    "storage_bucket": "todomvvmapi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569695306944:android:b63297cce1b204725e9925",
+        "android_client_info": {
+          "package_name": "com.example.flutter_mvvm_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuCQHkOl-bmNsA27fk47Fz19BEH9WUYsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
