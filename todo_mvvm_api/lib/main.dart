@@ -10,8 +10,8 @@
 //     └── todo_item.dart
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:todo_mvvm/viewmodels/todo_viewmodel.dart';
-import 'package:todo_mvvm/views/todo_list_screen.dart';
+import 'package:todo_mvvm_api/viewmodels/todo_viewmodel.dart';
+import 'package:todo_mvvm_api/views/todo_list_screen.dart';
 
 void main() {
   runApp(MultiProvider(

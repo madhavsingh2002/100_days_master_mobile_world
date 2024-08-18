@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:todo_mvvm/viewmodels/todo_viewmodel.dart';
+import 'package:todo_mvvm_api/viewmodels/todo_viewmodel.dart';
 
 class TodoListScreen extends StatelessWidget {
   TodoListScreen({super.key});
@@ -8,6 +8,9 @@ class TodoListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final todoViewmodel = Provider.of<TodoViewmodel>(context);
+     WidgetsBinding.instance.addPostFrameCallback((_) {
+      todoViewmodel.fetchTodos();
+    });
     return Scaffold(
       appBar: AppBar(
         title: Text('Todo List'),
@@ -26,7 +29,7 @@ class TodoListScreen extends StatelessWidget {
                 IconButton(
                     onPressed: () {
                       if (_titleController.text.trim().isNotEmpty) {
-                        todoViewmodel.addTodo(_titleController.text);
+                        todoViewmodel.addTodos(_titleController.text);
                         _titleController.clear();
                       }
                     },
